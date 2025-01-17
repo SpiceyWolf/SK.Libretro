@@ -31,11 +31,13 @@ namespace SK.Libretro
         public static T DeepCopy<T>(T obj)
             where T : class
         {
+#pragma warning disable SYSLIB0011 // Type or member is obsolete
             using MemoryStream ms = new();
             IFormatter formatter  = new BinaryFormatter();
             formatter.Serialize(ms, obj);
             _ = ms.Seek(0, SeekOrigin.Begin);
             return formatter.Deserialize(ms) as T;
+#pragma warning restore SYSLIB0011 // Type or member is obsolete
         }
     }
 }

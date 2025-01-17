@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PackageId>SK.Libretro</PackageId> <AssemblyName>SK.Libretro</AssemblyName>
+    <Title>SK.Libretro</Title> <Product>SK.Libretro</Product> <RootNamespace>SK.Libretro</RootNamespace>
+    <Description>Libretro wrapper written in C#.</Description>
+    <Copyright>Copyright © 2021-2025, Skurdt</Copyright>
+    <Company>Skurdt</Company>
+    <Authors>Skurd</Authors>
+    <PackageProjectUrl></PackageProjectUrl>
+
+    <TargetFramework>net7.0</TargetFramework>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <SelfContained>true</SelfContained>
+    <Platforms>AnyCPU</Platforms>
+    <Nullable>enable</Nullable>
+    <DebugType>embedded</DebugType>
+    <ExcludeAssets>runtime</ExcludeAssets>
+
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+</Project>
