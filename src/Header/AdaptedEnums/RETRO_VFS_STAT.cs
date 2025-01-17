@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal enum RETRO_VFS_STAT
+    public enum RETRO_VFS_STAT
     {
         IS_VALID             = 1 << 0,
         IS_DIRECTORY         = 1 << 1,

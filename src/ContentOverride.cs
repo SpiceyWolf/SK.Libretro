@@ -22,7 +22,7 @@
 
 namespace SK.Libretro
 {
-    internal sealed class ContentOverride
+    public sealed class ContentOverride
     {
         public readonly bool NeedFullpath;
         public readonly bool PersistentData;

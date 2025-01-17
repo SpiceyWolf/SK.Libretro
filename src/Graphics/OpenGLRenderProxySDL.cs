@@ -25,7 +25,7 @@ using System;
 
 namespace SK.Libretro
 {
-    internal sealed class OpenGLRenderProxySDL : HardwareRenderProxy
+    public sealed class OpenGLRenderProxySDL : HardwareRenderProxy
     {
         private IntPtr _glContext;
 

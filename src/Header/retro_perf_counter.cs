@@ -24,7 +24,7 @@ using System;
 
 namespace SK.Libretro.Header
 {
-    internal struct retro_perf_counter
+    public struct retro_perf_counter
     {
         public IntPtr ident; // const char*
         public ulong start;

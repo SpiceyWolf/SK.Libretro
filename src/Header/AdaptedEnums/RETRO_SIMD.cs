@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal enum RETRO_SIMD
+    public enum RETRO_SIMD
     {
         SSE    = 1 << 0,
         SSE2   = 1 << 1,

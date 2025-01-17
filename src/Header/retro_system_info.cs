@@ -24,7 +24,7 @@ using System;
 
 namespace SK.Libretro.Header
 {
-    internal struct retro_system_info
+    public struct retro_system_info
     {
         public IntPtr library_name;     // const char*
         public IntPtr library_version;  // const char*

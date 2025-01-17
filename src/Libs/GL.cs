@@ -24,7 +24,7 @@ using System.Runtime.InteropServices;
 
 namespace SK.Libretro
 {
-    internal static class GL
+    public static class GL
     {
         public const uint BGRA          = 0x80E1;
         public const uint UNSIGNED_BYTE = 0x1401;

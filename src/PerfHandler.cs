@@ -26,7 +26,7 @@ using System.Runtime.InteropServices;
 
 namespace SK.Libretro
 {
-    internal sealed class PerfHandler
+    public sealed class PerfHandler
     {
         private static readonly retro_perf_get_time_usec_t _get_time_usec  = GetTimeUsec;
         private static readonly retro_get_cpu_features_t _get_cpu_features = GetCpuFeatures;         

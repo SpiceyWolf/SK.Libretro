@@ -25,7 +25,7 @@ using System;
 
 namespace SK.Libretro
 {
-    internal sealed class SystemAVInfo
+    public sealed class SystemAVInfo
     {
         public int BaseWidth     { get; private set; }
         public int BaseHeight    { get; private set; }

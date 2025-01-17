@@ -27,7 +27,7 @@ using System.Runtime.InteropServices;
 
 namespace SK.Libretro
 {
-    internal sealed class SerializationHandler
+    public sealed class SerializationHandler
     {
         private const int DISK_NUM_MAX_STATES = 999999;
 

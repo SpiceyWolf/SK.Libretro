@@ -28,7 +28,7 @@ using System.Runtime.InteropServices;
 
 namespace SK.Libretro
 {
-    internal sealed class OptionsHandler
+    public sealed class OptionsHandler
     {
         public Options CoreOptions { get; private set; }
         public Options GameOptions { get; private set; }

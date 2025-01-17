@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal enum retro_message_target
+    public enum retro_message_target
     {
         RETRO_MESSAGE_TARGET_ALL = 0,
         RETRO_MESSAGE_TARGET_OSD,

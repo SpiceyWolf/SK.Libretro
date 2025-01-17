@@ -24,7 +24,7 @@ using System;
 
 namespace SK.Libretro.Header
 {
-    internal struct retro_memory_map
+    public struct retro_memory_map
     {
         public IntPtr descriptors; // retro_memory_descriptor*
         public uint num_descriptors;

@@ -32,11 +32,11 @@ namespace SK.Libretro
 
         private readonly SortedList<string, Option> _options = new();
 
-        internal Options()
+        public Options()
         {
         }
 
-        internal Options(SerializableCoreOptions options)
+        public Options(SerializableCoreOptions options)
         {
             foreach (string option in options.Options)
             {
@@ -45,13 +45,13 @@ namespace SK.Libretro
             }
         }
 
-        internal void UpdateValue(string key, int index)
+        public void UpdateValue(string key, int index)
         {
             if (TryGetValue(key, out Option option))
                 option.Update(index);
         }
 
-        internal bool TryGetValue(string key, out Option outOption) => _options.TryGetValue(key, out outOption);
+        public bool TryGetValue(string key, out Option outOption) => _options.TryGetValue(key, out outOption);
 
         public Option this[int index] => index >= 0 && index < _options.Count ? _options.Values[index] : null;
 

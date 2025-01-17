@@ -26,7 +26,7 @@ using System.Runtime.InteropServices;
 namespace SK.Libretro.Header
 {
     [StructLayout(LayoutKind.Sequential)]
-    internal sealed class retro_system_content_info_override
+    public sealed class retro_system_content_info_override
     {
         public IntPtr extensions; // const char*
         public bool need_fullpath;

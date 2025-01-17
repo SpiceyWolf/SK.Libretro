@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal enum retro_hw_context_type
+    public enum retro_hw_context_type
     {
         RETRO_HW_CONTEXT_NONE = 0,
         RETRO_HW_CONTEXT_OPENGL = 1,

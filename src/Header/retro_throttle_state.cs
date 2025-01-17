@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal struct retro_throttle_state
+    public struct retro_throttle_state
     {
         public uint mode;
         public float rate;

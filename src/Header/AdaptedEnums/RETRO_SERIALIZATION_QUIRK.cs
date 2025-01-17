@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal enum RETRO_SERIALIZATION_QUIRK
+    public enum RETRO_SERIALIZATION_QUIRK
     {
         INCOMPLETE          = 1 << 0,
         MUST_INITIALIZE     = 1 << 1,

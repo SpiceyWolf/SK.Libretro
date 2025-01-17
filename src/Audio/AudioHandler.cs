@@ -25,7 +25,7 @@ using System;
 
 namespace SK.Libretro
 {
-    internal sealed class AudioHandler : IDisposable
+    public sealed class AudioHandler : IDisposable
     {
         public const float NORMALIZED_GAIN = 1f / 0x8000;
 

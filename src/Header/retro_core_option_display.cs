@@ -26,7 +26,7 @@ using System.Runtime.InteropServices;
 namespace SK.Libretro.Header
 {
     [StructLayout(LayoutKind.Sequential)]
-    internal sealed class retro_core_option_display
+    public sealed class retro_core_option_display
     {
         public IntPtr key; // const char*
         public bool visible;

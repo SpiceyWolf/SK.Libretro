@@ -26,7 +26,7 @@ using System.Runtime.InteropServices;
 
 namespace SK.Libretro
 {
-    internal sealed class DynamicLibraryWindows : DynamicLibrary
+    public sealed class DynamicLibraryWindows : DynamicLibrary
     {
         [DllImport("kernel32", EntryPoint = "LoadLibraryA", CharSet = CharSet.Ansi, SetLastError = true)]
         private static extern IntPtr PlatformLoadLibrary([MarshalAs(UnmanagedType.LPStr)] string lpLibFileName);

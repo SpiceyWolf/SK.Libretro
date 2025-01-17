@@ -28,9 +28,9 @@ namespace SK.Libretro.Header
     // typedef bool (RETRO_CALLCONV *retro_set_rumble_state_t)(unsigned port, enum retro_rumble_effect effect, uint16_t strength);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
     [return: MarshalAs(UnmanagedType.I1)]
-    internal delegate bool retro_set_rumble_state_t(uint port, retro_rumble_effect effect, ushort strength);
+    public delegate bool retro_set_rumble_state_t(uint port, retro_rumble_effect effect, ushort strength);
 
-    internal struct retro_rumble_interface
+    public struct retro_rumble_interface
     {
         public IntPtr set_rumble_state; // retro_set_rumble_state_t
     }

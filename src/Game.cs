@@ -28,7 +28,7 @@ using System.Runtime.InteropServices;
 
 namespace SK.Libretro
 {
-    internal sealed class Game : IDisposable
+    public sealed class Game : IDisposable
     {
         public bool Running { get; private set; }
         public string Name { get; private set; }

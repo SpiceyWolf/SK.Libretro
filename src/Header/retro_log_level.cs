@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal enum retro_log_level
+    public enum retro_log_level
     {
         RETRO_LOG_DEBUG = 0,
         RETRO_LOG_INFO = 1,

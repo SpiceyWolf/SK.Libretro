@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal enum RETRO_DEVICE_ID_POINTER
+    public enum RETRO_DEVICE_ID_POINTER
     {
         X       = 0,
         Y       = 1,

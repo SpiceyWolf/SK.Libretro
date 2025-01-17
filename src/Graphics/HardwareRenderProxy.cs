@@ -25,7 +25,7 @@ using System;
 
 namespace SK.Libretro
 {
-    internal abstract class HardwareRenderProxy : IDisposable
+    public abstract class HardwareRenderProxy : IDisposable
     {
         public readonly retro_hw_get_current_framebuffer_t GetCurrentFrameBuffer;
         public readonly retro_hw_get_proc_address_t GetProcAddress;

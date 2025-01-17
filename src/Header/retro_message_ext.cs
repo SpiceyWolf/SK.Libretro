@@ -24,7 +24,7 @@ using System;
 
 namespace SK.Libretro.Header
 {
-    internal struct retro_message_ext
+    public struct retro_message_ext
     {
         public IntPtr msg; // const char*
         public uint duration;

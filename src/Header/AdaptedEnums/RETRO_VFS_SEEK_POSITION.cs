@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal enum RETRO_VFS_SEEK_POSITION
+    public enum RETRO_VFS_SEEK_POSITION
     {
         START   = 0,
         CURRENT = 1,

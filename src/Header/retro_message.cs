@@ -24,7 +24,7 @@ using System;
 
 namespace SK.Libretro.Header
 {
-    internal struct retro_message
+    public struct retro_message
     {
         public IntPtr msg; // const char*
         public uint frames;

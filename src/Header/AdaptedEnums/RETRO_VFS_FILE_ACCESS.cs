@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal enum RETRO_VFS_FILE_ACCESS
+    public enum RETRO_VFS_FILE_ACCESS
     {
         READ            = 1 << 0,
         WRITE           = 1 << 1,

@@ -32,24 +32,24 @@ namespace SK.Libretro
         public string[] PossibleValues { get; private set; }
         public bool Visible { get; private set; } = true;
 
-        internal Option(string line)
+        public Option(string line)
         : this(line.Split(';'))
         {
         }
 
-        internal Option(string[] lineSplit)
+        public Option(string[] lineSplit)
         {
             Update(lineSplit);
             CurrentValue = lineSplit[2];
         }
 
-        internal Option(string key, string[] lineSplit)
+        public Option(string key, string[] lineSplit)
         {
             Update(key, lineSplit);
             CurrentValue = lineSplit[1].Trim().Split('|')[0];
         }
 
-        internal Option(string key, string description, string info, string value, string[] possibleValues)
+        public Option(string key, string description, string info, string value, string[] possibleValues)
         {
             Update(key, description, info, possibleValues);
             CurrentValue = value;
@@ -64,21 +64,21 @@ namespace SK.Libretro
             CurrentValue = PossibleValues[clampedIndex];
         }
 
-        internal void Update(string key, string[] lineSplit)
+        public void Update(string key, string[] lineSplit)
         {
             Key            = key;
             Description    = lineSplit[0];
             PossibleValues = lineSplit[1].Trim().Split('|');
         }
 
-        internal void Update(string[] lineSplit)
+        public void Update(string[] lineSplit)
         {
             Key            = lineSplit[0];
             Description    = lineSplit[1];
             PossibleValues = lineSplit[3].Trim().Split('|');
         }
 
-        internal void Update(string key, string description, string info, string[] possibleValues)
+        public void Update(string key, string description, string info, string[] possibleValues)
         {
             Key            = key;
             Description    = description;
@@ -86,6 +86,6 @@ namespace SK.Libretro
             PossibleValues = possibleValues;
         }
 
-        internal void SetVisibility(bool visible) => Visible = visible;
+        public void SetVisibility(bool visible) => Visible = visible;
     }
 }

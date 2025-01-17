@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal enum retro_pixel_format
+    public enum retro_pixel_format
     {
         RETRO_PIXEL_FORMAT_0RGB1555 = 0,
         RETRO_PIXEL_FORMAT_XRGB8888 = 1,

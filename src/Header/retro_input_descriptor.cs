@@ -26,7 +26,7 @@ using System.Runtime.InteropServices;
 namespace SK.Libretro.Header
 {
     [StructLayout(LayoutKind.Sequential)]
-    internal sealed class retro_input_descriptor
+    public sealed class retro_input_descriptor
     {
         public uint port;
         public RETRO_DEVICE device;

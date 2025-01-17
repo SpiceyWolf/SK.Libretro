@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal struct retro_fastforwarding_override
+    public struct retro_fastforwarding_override
     {
         public float ratio;
         public bool fastforward;

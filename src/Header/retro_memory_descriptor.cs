@@ -26,7 +26,7 @@ using System.Runtime.InteropServices;
 namespace SK.Libretro.Header
 {
     [StructLayout(LayoutKind.Sequential)]
-    internal sealed class retro_memory_descriptor
+    public sealed class retro_memory_descriptor
     {
         public ulong flags;
         public IntPtr ptr;       // void*

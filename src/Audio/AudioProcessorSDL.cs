@@ -24,7 +24,7 @@ using System;
 
 namespace SK.Libretro
 {
-    internal sealed class AudioProcessorSDL : IAudioProcessor
+    public sealed class AudioProcessorSDL : IAudioProcessor
     {
         private uint _audioDeviceId = SDL.AUDIO_DEVICE_DEFAULT_OUTPUT;
         private IntPtr _audioStream = IntPtr.Zero;

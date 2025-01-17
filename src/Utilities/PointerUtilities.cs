@@ -26,7 +26,7 @@ using System.Runtime.InteropServices;
 
 namespace SK.Libretro
 {
-    internal static class PointerUtilities
+    public static class PointerUtilities
     {
         public static bool IsNull(this IntPtr ptr) => ptr == IntPtr.Zero;
 

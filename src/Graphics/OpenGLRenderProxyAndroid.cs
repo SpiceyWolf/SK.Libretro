@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 
 namespace SK.Libretro
 {
-    internal sealed class OpenGLRenderProxyAndroid : HardwareRenderProxy
+    public sealed class OpenGLRenderProxyAndroid : HardwareRenderProxy
     {
         private IntPtr _eglDisplay = IntPtr.Zero;
         private IntPtr _eglSurface = IntPtr.Zero;

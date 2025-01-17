@@ -24,7 +24,7 @@ using System;
 
 namespace SK.Libretro.Header
 {
-    internal struct retro_game_info
+    public struct retro_game_info
     {
         public IntPtr path; // const char*
         public IntPtr data; // const void*

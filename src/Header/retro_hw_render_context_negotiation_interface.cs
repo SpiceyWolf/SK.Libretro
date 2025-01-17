@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal struct retro_hw_render_context_negotiation_interface
+    public struct retro_hw_render_context_negotiation_interface
     {
         public retro_hw_render_context_negotiation_interface_type interface_type;
         public uint interface_version;

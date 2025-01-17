@@ -33,7 +33,7 @@ namespace SK.Libretro
 
         private readonly List<Controller> _devices = new();
 
-        internal void Add(Controller device)
+        public void Add(Controller device)
         {
             if (!_devices.Contains(device))
                 _devices.Add(device);

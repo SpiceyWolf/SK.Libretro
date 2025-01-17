@@ -24,7 +24,7 @@ using System;
 
 namespace SK.Libretro
 {
-    internal sealed class NullLogProcessor : ILogProcessor
+    public sealed class NullLogProcessor : ILogProcessor
     {
         public bool SupportsColorTags { get; } = false;
 

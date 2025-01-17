@@ -25,7 +25,7 @@ using System.Threading.Tasks;
 
 namespace SK.Libretro
 {
-    internal sealed class NullGraphicsProcessor : IGraphicsProcessor
+    public sealed class NullGraphicsProcessor : IGraphicsProcessor
     {
         public IntPtr NativeWindow { get; }
 

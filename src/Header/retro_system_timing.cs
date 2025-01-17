@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal struct retro_system_timing
+    public struct retro_system_timing
     {
         public double fps;
         public double sample_rate;

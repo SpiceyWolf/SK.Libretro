@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal enum RETRO_THROTTLE
+    public enum RETRO_THROTTLE
     {
         NONE           = 0,
         FRAME_STEPPING = 1,

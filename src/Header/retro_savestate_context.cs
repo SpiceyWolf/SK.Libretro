@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal enum retro_savestate_context
+    public enum retro_savestate_context
     {
         RETRO_SAVESTATE_CONTEXT_NORMAL = 0,
         RETRO_SAVESTATE_CONTEXT_RUNAHEAD_SAME_INSTANCE = 1,

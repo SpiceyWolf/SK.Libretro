@@ -24,7 +24,7 @@ using SK.Libretro.Header;
 
 namespace SK.Libretro
 {
-    internal static class LogLevelEnumExtensions
+    public static class LogLevelEnumExtensions
     {
         public static retro_log_level ToRetroLogLevel(this LogLevel logLevel) => logLevel switch
         {

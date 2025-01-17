@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal enum retro_message_type
+    public enum retro_message_type
     {
         RETRO_MESSAGE_TYPE_NOTIFICATION = 0,
         RETRO_MESSAGE_TYPE_NOTIFICATION_ALT,

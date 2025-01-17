@@ -26,7 +26,7 @@ using System.Runtime.InteropServices;
 
 namespace SK.Libretro
 {
-    internal sealed class LedHandler
+    public sealed class LedHandler
     {
         private static readonly retro_set_led_state_t _setLedState = SetState;
         private readonly ILedProcessor _processor;

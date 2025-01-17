@@ -26,7 +26,7 @@ using System.Collections.Generic;
 
 namespace SK.Libretro
 {
-    internal sealed class Wrapper
+    public sealed class Wrapper
     {
         public static Wrapper Instance
         {

@@ -24,7 +24,7 @@ using SK.Libretro.Header;
 
 namespace SK.Libretro
 {
-    internal sealed class SystemInfo
+    public sealed class SystemInfo
     {
         public readonly string LibraryName;
         public readonly string LibraryVersion;

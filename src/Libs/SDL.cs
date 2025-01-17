@@ -25,7 +25,7 @@ using System.Runtime.InteropServices;
 
 namespace SK.Libretro
 {
-    internal static class SDL
+    public static class SDL
     {
         public const uint INIT_VIDEO = 0x00000020u;
         public const uint INIT_AUDIO = 0x00000010u;

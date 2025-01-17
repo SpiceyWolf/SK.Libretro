@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal enum retro_camera_buffer
+    public enum retro_camera_buffer
     {
         RETRO_CAMERA_BUFFER_OPENGL_TEXTURE = 0,
         RETRO_CAMERA_BUFFER_RAW_FRAMEBUFFER

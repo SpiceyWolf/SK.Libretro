@@ -25,7 +25,7 @@ using System.Runtime.InteropServices;
 
 namespace SK.Libretro
 {
-    internal abstract class DynamicLibraryUNIX : DynamicLibrary
+    public abstract class DynamicLibraryUNIX : DynamicLibrary
     {
         [DllImport("libdl", EntryPoint = "dlopen", SetLastError = true)]
         private static extern IntPtr PlatformLoadLibrary(string fileName, int flags);

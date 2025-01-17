@@ -24,7 +24,7 @@ using SK.Libretro.Header;
 
 namespace SK.Libretro
 {
-    internal sealed class NullInputProcessor : IInputProcessor
+    public sealed class NullInputProcessor : IInputProcessor
     {
         public LeftStickBehaviour LeftStickBehaviour { get; set; }
 

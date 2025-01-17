@@ -25,7 +25,7 @@ using System;
 
 namespace SK.Libretro
 {
-    internal sealed class MemoryHandler
+    public sealed class MemoryHandler
     {
         private retro_memory_map _memoryMap;
 

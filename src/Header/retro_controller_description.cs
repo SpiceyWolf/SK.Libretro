@@ -26,7 +26,7 @@ using System.Runtime.InteropServices;
 namespace SK.Libretro.Header
 {
     [StructLayout(LayoutKind.Sequential)]
-    internal sealed class retro_controller_description
+    public sealed class retro_controller_description
     {
         public IntPtr desc; // const char*
         public uint id;

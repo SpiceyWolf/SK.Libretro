@@ -24,7 +24,7 @@ using System;
 
 namespace SK.Libretro
 {
-    internal sealed class NullAudioProcessor : IAudioProcessor
+    public sealed class NullAudioProcessor : IAudioProcessor
     {
         public void Init(int sampleRate) { }
         public void Dispose() { }

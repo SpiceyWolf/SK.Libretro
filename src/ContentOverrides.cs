@@ -24,7 +24,7 @@ using System.Collections.Generic;
 
 namespace SK.Libretro
 {
-    internal sealed class ContentOverrides
+    public sealed class ContentOverrides
     {
         private readonly Dictionary<string, ContentOverride> _overrides = new();
 

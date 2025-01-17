@@ -24,7 +24,7 @@ using System;
 
 namespace SK.Libretro
 {
-    internal abstract class DynamicLibrary : IDisposable
+    public abstract class DynamicLibrary : IDisposable
     {
         public readonly string Extension;
 

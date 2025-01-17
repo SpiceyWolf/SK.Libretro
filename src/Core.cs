@@ -28,7 +28,7 @@ using System.Runtime.InteropServices;
 
 namespace SK.Libretro
 {
-    internal sealed class Core : IDisposable
+    public sealed class Core : IDisposable
     {
         public bool Initialized { get; private set; }
         public uint ApiVersion { get; private set; }

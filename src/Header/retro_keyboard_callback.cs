@@ -27,9 +27,9 @@ namespace SK.Libretro.Header
 {
     // typedef void (RETRO_CALLCONV *retro_keyboard_event_t)(bool down, unsigned keycode, uint32_t character, uint16_t key_modifiers);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    internal delegate void retro_keyboard_event_t(bool down, uint keycode, uint character, ushort key_modifiers);
+    public delegate void retro_keyboard_event_t(bool down, uint keycode, uint character, ushort key_modifiers);
 
-    internal struct retro_keyboard_callback
+    public struct retro_keyboard_callback
     {
         public IntPtr callback; // retro_keyboard_event_t
     }

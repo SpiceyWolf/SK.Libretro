@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal enum retro_language
+    public enum retro_language
     {
         ENGLISH             = 0,
         JAPANESE            = 1,

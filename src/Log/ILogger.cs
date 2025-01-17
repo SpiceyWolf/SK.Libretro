@@ -24,7 +24,7 @@ using System;
 
 namespace SK.Libretro
 {
-    internal interface ILogger
+    public interface ILogger
     {
         void SetLogLevel(LogLevel level);
         void LogDebug(string message, string caller);

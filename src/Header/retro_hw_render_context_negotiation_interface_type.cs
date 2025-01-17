@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal enum retro_hw_render_context_negotiation_interface_type
+    public enum retro_hw_render_context_negotiation_interface_type
     {
         RETRO_HW_RENDER_CONTEXT_NEGOTIATION_INTERFACE_VULKAN = 0,
         RETRO_HW_RENDER_CONTEXT_NEGOTIATION_INTERFACE_DUMMY = int.MaxValue

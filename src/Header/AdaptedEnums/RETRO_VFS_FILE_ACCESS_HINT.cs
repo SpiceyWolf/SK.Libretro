@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal enum RETRO_VFS_FILE_ACCESS_HINT
+    public enum RETRO_VFS_FILE_ACCESS_HINT
     {
         NONE            = 0,
         FREQUENT_ACCESS = 1 << 0

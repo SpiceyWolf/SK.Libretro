@@ -24,7 +24,7 @@ using System;
 
 namespace SK.Libretro.Header
 {
-    internal struct retro_subsystem_rom_info
+    public struct retro_subsystem_rom_info
     {
         public IntPtr desc;             // const char*
         public IntPtr valid_extensions; // const char*

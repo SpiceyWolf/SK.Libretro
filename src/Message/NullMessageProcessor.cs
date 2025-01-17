@@ -22,7 +22,7 @@
 
 namespace SK.Libretro
 {
-    internal sealed class NullMessageProcessor : IMessageProcessor
+    public sealed class NullMessageProcessor : IMessageProcessor
     {
         public void Dispose() { }
         public void ShowNotification(string message, uint seconds, LogLevel level, uint priority) { }

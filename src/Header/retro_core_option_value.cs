@@ -26,7 +26,7 @@ using System.Runtime.InteropServices;
 namespace SK.Libretro.Header
 {
     [StructLayout(LayoutKind.Sequential)]
-    internal sealed class retro_core_option_value
+    public sealed class retro_core_option_value
     {
         public IntPtr value; // const char*
         public IntPtr label; // const char*

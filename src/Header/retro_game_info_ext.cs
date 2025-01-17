@@ -25,7 +25,7 @@ using System.Runtime.InteropServices;
 
 namespace SK.Libretro.Header
 {
-    internal struct retro_game_info_ext
+    public struct retro_game_info_ext
     {
         public IntPtr full_path;    // const char*
         public IntPtr archive_path; // const char*

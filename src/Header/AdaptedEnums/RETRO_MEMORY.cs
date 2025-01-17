@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal enum RETRO_MEMORY
+    public enum RETRO_MEMORY
     {
         MASK       = 0xff,
         SAVE_RAM   = 0,

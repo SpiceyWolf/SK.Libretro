@@ -24,7 +24,7 @@ using System;
 
 namespace SK.Libretro.Header
 {
-    internal struct retro_subsystem_memory_info
+    public struct retro_subsystem_memory_info
     {
         public IntPtr extension; // const char*
         public uint type;

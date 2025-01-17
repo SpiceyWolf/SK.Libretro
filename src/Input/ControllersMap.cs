@@ -34,7 +34,7 @@ namespace SK.Libretro
 
         public Controllers this[int port] => _deviceMap.TryGetValue(port, out Controllers devices) ? devices : null;
 
-        internal void Add(int port, Controller device)
+        public void Add(int port, Controller device)
         {
             if (_deviceMap.TryGetValue(port, out Controllers existingDevices))
                 existingDevices.Add(device);

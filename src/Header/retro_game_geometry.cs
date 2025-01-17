@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal struct retro_game_geometry
+    public struct retro_game_geometry
     {
         public uint base_width;
         public uint base_height;

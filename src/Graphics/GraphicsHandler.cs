@@ -26,7 +26,7 @@ using System.Runtime.InteropServices;
 
 namespace SK.Libretro
 {
-    internal sealed class GraphicsHandler : IDisposable
+    public sealed class GraphicsHandler : IDisposable
     {
         public bool Enabled { get; set; }
 

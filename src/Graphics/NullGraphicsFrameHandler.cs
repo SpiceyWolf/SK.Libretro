@@ -24,7 +24,7 @@ using System;
 
 namespace SK.Libretro
 {
-    internal sealed class NullGraphicsFrameHandler : GraphicsFrameHandlerBase
+    public sealed class NullGraphicsFrameHandler : GraphicsFrameHandlerBase
     {
         public NullGraphicsFrameHandler(IGraphicsProcessor processor)
         : base(processor)

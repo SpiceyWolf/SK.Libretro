@@ -22,7 +22,7 @@
 
 namespace SK.Libretro
 {
-    internal sealed class DynamicLibraryLinux : DynamicLibraryUNIX
+    public sealed class DynamicLibraryLinux : DynamicLibraryUNIX
     {
         public DynamicLibraryLinux(bool deleteFileOnDispose)
         : base("so", deleteFileOnDispose)

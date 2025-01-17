@@ -27,9 +27,9 @@ namespace SK.Libretro.Header
 {
     // typedef void (RETRO_CALLCONV *retro_set_led_state_t)(int led, int state);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    internal delegate void retro_set_led_state_t(int led, int state);
+    public delegate void retro_set_led_state_t(int led, int state);
 
-    internal struct retro_led_interface
+    public struct retro_led_interface
     {
         public IntPtr set_led_state; // retro_set_led_state_t
     }

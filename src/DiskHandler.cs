@@ -27,7 +27,7 @@ using System.Runtime.InteropServices;
 
 namespace SK.Libretro
 {
-    internal sealed class DiskHandler
+    public sealed class DiskHandler
     {
         public const int VERSION = 1;
 

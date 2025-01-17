@@ -28,7 +28,7 @@ using System.Runtime.InteropServices;
 
 namespace SK.Libretro
 {
-    internal sealed class VFSHandler : IDisposable
+    public sealed class VFSHandler : IDisposable
     {
         private const int SUPPORTED_VERSION = 2;
 

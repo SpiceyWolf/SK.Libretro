@@ -25,7 +25,7 @@ using System;
 
 namespace SK.Libretro
 {
-    internal sealed class EnvironmentHandler
+    public sealed class EnvironmentHandler
     {
         private static readonly retro_environment_t _callback = EnvironmentCallback;
 

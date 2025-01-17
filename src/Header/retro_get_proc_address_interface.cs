@@ -27,9 +27,9 @@ namespace SK.Libretro.Header
 {
     // typedef retro_proc_address_t (RETRO_CALLCONV *retro_get_proc_address_t)(const char* sym);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    internal delegate IntPtr retro_get_proc_address_t(IntPtr sym);
+    public delegate IntPtr retro_get_proc_address_t(IntPtr sym);
 
-    internal struct retro_get_proc_address_interface
+    public struct retro_get_proc_address_interface
     {
         public IntPtr get_proc_address; // retro_get_proc_address_t
     }

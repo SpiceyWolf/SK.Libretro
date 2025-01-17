@@ -29,7 +29,7 @@ using System.Text.RegularExpressions;
 
 namespace SK.Libretro
 {
-    internal sealed class LogHandlerWin : LogHandler
+    public sealed class LogHandlerWin : LogHandler
     {
         private static readonly Regex _argumentsRegex        = new(@"%(?:\d+\$)?[+-]?(?:[ 0]|'.{1})?-?\d*(?:\.\d+)?([bcdeEufFgGosxX])", RegexOptions.Compiled);
         private static readonly StringBuilder _sprintfBuffer = new();

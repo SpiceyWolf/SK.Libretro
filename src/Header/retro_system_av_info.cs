@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal struct retro_system_av_info
+    public struct retro_system_av_info
     {
         public retro_game_geometry geometry;
         public retro_system_timing timing;

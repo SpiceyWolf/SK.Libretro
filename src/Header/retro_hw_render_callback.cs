@@ -27,16 +27,16 @@ namespace SK.Libretro.Header
 {
     // typedef void (RETRO_CALLCONV *retro_hw_context_reset_t)(void);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    internal delegate void retro_hw_context_reset_t();
+    public delegate void retro_hw_context_reset_t();
     // typedef uintptr_t (RETRO_CALLCONV *retro_hw_get_current_framebuffer_t)(void);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    internal delegate IntPtr retro_hw_get_current_framebuffer_t();
+    public delegate IntPtr retro_hw_get_current_framebuffer_t();
     // typedef retro_proc_address_t (RETRO_CALLCONV *retro_hw_get_proc_address_t)(const char* sym);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    internal delegate IntPtr retro_hw_get_proc_address_t([MarshalAs(UnmanagedType.LPStr)] string sym);
+    public delegate IntPtr retro_hw_get_proc_address_t([MarshalAs(UnmanagedType.LPStr)] string sym);
 
     [StructLayout(LayoutKind.Sequential)]
-    internal sealed class retro_hw_render_callback
+    public sealed class retro_hw_render_callback
     {
         public retro_hw_context_type context_type;
         public IntPtr context_reset;           // retro_hw_context_reset_t

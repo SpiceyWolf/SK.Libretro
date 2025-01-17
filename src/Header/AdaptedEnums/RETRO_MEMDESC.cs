@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal enum RETRO_MEMDESC
+    public enum RETRO_MEMDESC
     {
         CONST      = 1 << 0,
         BIGENDIAN  = 1 << 1,

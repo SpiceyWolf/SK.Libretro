@@ -26,7 +26,7 @@ using System.Runtime.InteropServices;
 namespace SK.Libretro.Header
 {
     [StructLayout(LayoutKind.Sequential)]
-    internal sealed class retro_core_options_intl
+    public sealed class retro_core_options_intl
     {
         public IntPtr us;    // retro_core_option_definition*
         public IntPtr local; // retro_core_option_definition*

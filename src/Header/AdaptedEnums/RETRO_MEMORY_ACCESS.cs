@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal enum RETRO_MEMORY_ACCESS
+    public enum RETRO_MEMORY_ACCESS
     {
         WRITE = 1 << 0,
         READ  = 1 << 1

@@ -25,7 +25,7 @@ using System;
 namespace SK.Libretro
 {
     [Serializable]
-    internal sealed class SerializableCoreOptions
+    public sealed class SerializableCoreOptions
     {
         public string[] Options;
 

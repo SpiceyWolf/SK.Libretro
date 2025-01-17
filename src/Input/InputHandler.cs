@@ -27,7 +27,7 @@ using System.Runtime.InteropServices;
 
 namespace SK.Libretro
 {
-    internal sealed class InputHandler
+    public sealed class InputHandler
     {
         private const int MAX_USERS_SUPPORTED = 2;
 

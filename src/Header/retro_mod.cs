@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal enum retro_mod
+    public enum retro_mod
     {
         RETROKMOD_NONE      = 0x0000,
 

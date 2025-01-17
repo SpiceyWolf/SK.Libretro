@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal enum RETRO_REGION
+    public enum RETRO_REGION
     {
         NTSC = 0,
         PAL  = 1

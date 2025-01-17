@@ -28,67 +28,67 @@ namespace SK.Libretro.Header
     // typedef const char *(RETRO_CALLCONV *retro_vfs_get_path_t)(struct retro_vfs_file_handle *stream);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
     [return: MarshalAs(UnmanagedType.LPStr)]
-    internal delegate string retro_vfs_get_path_t(ref retro_vfs_file_handle stream);
+    public delegate string retro_vfs_get_path_t(ref retro_vfs_file_handle stream);
     // typedef struct retro_vfs_file_handle *(RETRO_CALLCONV *retro_vfs_open_t)(const char* path, unsigned mode, unsigned hints);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    internal delegate IntPtr retro_vfs_open_t([MarshalAs(UnmanagedType.LPStr)] string path, uint mode, uint hints);
+    public delegate IntPtr retro_vfs_open_t([MarshalAs(UnmanagedType.LPStr)] string path, uint mode, uint hints);
     // typedef int (RETRO_CALLCONV *retro_vfs_close_t) (struct retro_vfs_file_handle *stream);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    internal delegate int retro_vfs_close_t(ref retro_vfs_file_handle stream);
+    public delegate int retro_vfs_close_t(ref retro_vfs_file_handle stream);
     // typedef System.Int64 (RETRO_CALLCONV *retro_vfs_size_t)(struct retro_vfs_file_handle *stream);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    internal delegate long retro_vfs_size_t(ref retro_vfs_file_handle stream);
+    public delegate long retro_vfs_size_t(ref retro_vfs_file_handle stream);
     // typedef System.Int64 (RETRO_CALLCONV *retro_vfs_truncate_t)(struct retro_vfs_file_handle *stream, System.Int64 length);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    internal delegate long retro_vfs_truncate_t(ref retro_vfs_file_handle stream, long length);
+    public delegate long retro_vfs_truncate_t(ref retro_vfs_file_handle stream, long length);
     // typedef System.Int64 (RETRO_CALLCONV *retro_vfs_tell_t)(struct retro_vfs_file_handle *stream);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    internal delegate long retro_vfs_tell_t(ref retro_vfs_file_handle stream);
+    public delegate long retro_vfs_tell_t(ref retro_vfs_file_handle stream);
     // typedef System.Int64 (RETRO_CALLCONV *retro_vfs_seek_t)(struct retro_vfs_file_handle *stream, System.Int64 offset, int seek_position);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    internal delegate long retro_vfs_seek_t(ref retro_vfs_file_handle stream, long offset, int seek_position);
+    public delegate long retro_vfs_seek_t(ref retro_vfs_file_handle stream, long offset, int seek_position);
     // typedef System.Int64 (RETRO_CALLCONV *retro_vfs_read_t)(struct retro_vfs_file_handle *stream, void* s, uSystem.Int64 len);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    internal delegate long retro_vfs_read_t(ref retro_vfs_file_handle stream, IntPtr s, long len);
+    public delegate long retro_vfs_read_t(ref retro_vfs_file_handle stream, IntPtr s, long len);
     // typedef System.Int64 (RETRO_CALLCONV *retro_vfs_write_t)(struct retro_vfs_file_handle *stream, const void* s, uSystem.Int64 len);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    internal delegate long retro_vfs_write_t(ref retro_vfs_file_handle stream, IntPtr s, long len);
+    public delegate long retro_vfs_write_t(ref retro_vfs_file_handle stream, IntPtr s, long len);
     // typedef int (RETRO_CALLCONV *retro_vfs_flush_t)(struct retro_vfs_file_handle *stream);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    internal delegate int retro_vfs_flush_t(ref retro_vfs_file_handle stream);
+    public delegate int retro_vfs_flush_t(ref retro_vfs_file_handle stream);
     // typedef int (RETRO_CALLCONV *retro_vfs_remove_t)(const char* path);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    internal delegate int retro_vfs_remove_t([MarshalAs(UnmanagedType.LPStr)] string path);
+    public delegate int retro_vfs_remove_t([MarshalAs(UnmanagedType.LPStr)] string path);
     // typedef int (RETRO_CALLCONV *retro_vfs_rename_t)(const char* old_path, const char* new_path);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    internal delegate int retro_vfs_rename_t([MarshalAs(UnmanagedType.LPStr)] string old_path, [MarshalAs(UnmanagedType.LPStr)] string new_path);
+    public delegate int retro_vfs_rename_t([MarshalAs(UnmanagedType.LPStr)] string old_path, [MarshalAs(UnmanagedType.LPStr)] string new_path);
     // typedef int (RETRO_CALLCONV *retro_vfs_stat_t)(const char* path, int32_t *size);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    internal delegate int retro_vfs_stat_t([MarshalAs(UnmanagedType.LPStr)] string path, ref int size);
+    public delegate int retro_vfs_stat_t([MarshalAs(UnmanagedType.LPStr)] string path, ref int size);
     // typedef int (RETRO_CALLCONV *retro_vfs_mkdir_t)(const char* dir);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    internal delegate int retro_vfs_mkdir_t([MarshalAs(UnmanagedType.LPStr)] string dir);
+    public delegate int retro_vfs_mkdir_t([MarshalAs(UnmanagedType.LPStr)] string dir);
     // typedef struct retro_vfs_dir_handle *(RETRO_CALLCONV *retro_vfs_opendir_t)(const char* dir, bool include_hidden);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    internal delegate IntPtr retro_vfs_opendir_t([MarshalAs(UnmanagedType.LPStr)] string dir, [MarshalAs(UnmanagedType.I1)] bool include_hidden);
+    public delegate IntPtr retro_vfs_opendir_t([MarshalAs(UnmanagedType.LPStr)] string dir, [MarshalAs(UnmanagedType.I1)] bool include_hidden);
     // typedef bool (RETRO_CALLCONV *retro_vfs_readdir_t)(struct retro_vfs_dir_handle *dirstream);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
     [return: MarshalAs(UnmanagedType.I1)]
-    internal delegate bool retro_vfs_readdir_t(ref retro_vfs_dir_handle dirstream);
+    public delegate bool retro_vfs_readdir_t(ref retro_vfs_dir_handle dirstream);
     // typedef const char*(RETRO_CALLCONV *retro_vfs_dirent_get_name_t)(struct retro_vfs_dir_handle *dirstream);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
     [return: MarshalAs(UnmanagedType.LPStr)]
-    internal delegate string retro_vfs_dirent_get_name_t(ref retro_vfs_dir_handle dirstream);
+    public delegate string retro_vfs_dirent_get_name_t(ref retro_vfs_dir_handle dirstream);
     // typedef bool (RETRO_CALLCONV *retro_vfs_dirent_is_dir_t)(struct retro_vfs_dir_handle *dirstream);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
     [return: MarshalAs(UnmanagedType.I1)]
-    internal delegate bool retro_vfs_dirent_is_dir_t(ref retro_vfs_dir_handle dirstream);
+    public delegate bool retro_vfs_dirent_is_dir_t(ref retro_vfs_dir_handle dirstream);
     // typedef int (RETRO_CALLCONV *retro_vfs_closedir_t)(struct retro_vfs_dir_handle *dirstream);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    internal delegate int retro_vfs_closedir_t(ref retro_vfs_dir_handle dirstream);
+    public delegate int retro_vfs_closedir_t(ref retro_vfs_dir_handle dirstream);
 
     [StructLayout(LayoutKind.Sequential)]
-    internal sealed class retro_vfs_interface
+    public sealed class retro_vfs_interface
     {
         public IntPtr get_path;        // retro_vfs_get_path_t
         public IntPtr open;            // retro_vfs_open_t

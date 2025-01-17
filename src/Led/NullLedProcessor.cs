@@ -22,7 +22,7 @@
 
 namespace SK.Libretro
 {
-    internal sealed class NullLedProcessor : ILedProcessor
+    public sealed class NullLedProcessor : ILedProcessor
     {
         public void SetState(int led, int state) { }
     }

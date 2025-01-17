@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal enum retro_sensor_action
+    public enum retro_sensor_action
     {
         RETRO_SENSOR_ACCELEROMETER_ENABLE = 0,
         RETRO_SENSOR_ACCELEROMETER_DISABLE,

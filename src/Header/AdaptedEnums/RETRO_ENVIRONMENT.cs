@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal enum RETRO_ENVIRONMENT
+    public enum RETRO_ENVIRONMENT
     {
         EXPERIMENTAL                                = 0x10000,
         PRIVATE                                     = 0x20000,

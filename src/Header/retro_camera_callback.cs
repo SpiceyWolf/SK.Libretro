@@ -28,21 +28,21 @@ namespace SK.Libretro.Header
     // typedef bool (RETRO_CALLCONV *retro_camera_start_t) (void);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
     [return: MarshalAs(UnmanagedType.I1)]
-    internal delegate bool retro_camera_start_t();
+    public delegate bool retro_camera_start_t();
     // typedef void (RETRO_CALLCONV *retro_camera_stop_t) (void);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    internal delegate void retro_camera_stop_t();
+    public delegate void retro_camera_stop_t();
     // typedef void (RETRO_CALLCONV *retro_camera_lifetime_status_t) (void);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    internal delegate void retro_camera_lifetime_status_t();
+    public delegate void retro_camera_lifetime_status_t();
     // typedef void (RETRO_CALLCONV *retro_camera_frame_raw_framebuffer_t) (const uint32_t* buffer, unsigned width, unsigned height, size_t pitch);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    internal delegate void retro_camera_frame_raw_framebuffer_t(UIntPtr buffer, uint width, uint height, nuint pitch);
+    public delegate void retro_camera_frame_raw_framebuffer_t(UIntPtr buffer, uint width, uint height, nuint pitch);
     // typedef void (RETRO_CALLCONV *retro_camera_frame_opengl_texture_t) (unsigned texture_id, unsigned texture_target, const float* affine);
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    internal delegate void retro_camera_frame_opengl_texture_t(uint texture_id, uint texture_target, ref float affine);
+    public delegate void retro_camera_frame_opengl_texture_t(uint texture_id, uint texture_target, ref float affine);
 
-    internal struct retro_camera_callback
+    public struct retro_camera_callback
     {
         public ulong caps;
         public uint width;

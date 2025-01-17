@@ -25,7 +25,7 @@ using System;
 
 namespace SK.Libretro
 {
-    internal sealed class MessageHandler : IDisposable
+    public sealed class MessageHandler : IDisposable
     {
         private const int VERSION = 1;
 

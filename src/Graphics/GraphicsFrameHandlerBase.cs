@@ -24,7 +24,7 @@ using System;
 
 namespace SK.Libretro
 {
-    internal abstract class GraphicsFrameHandlerBase
+    public abstract class GraphicsFrameHandlerBase
     {
         protected readonly IGraphicsProcessor _processor;
 

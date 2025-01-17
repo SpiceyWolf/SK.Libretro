@@ -22,7 +22,7 @@
 
 namespace SK.Libretro.Header
 {
-    internal enum retro_hw_render_interface_type
+    public enum retro_hw_render_interface_type
     {
         RETRO_HW_RENDER_INTERFACE_VULKAN = 0,
         RETRO_HW_RENDER_INTERFACE_D3D9 = 1,

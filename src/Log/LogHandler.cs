@@ -26,7 +26,7 @@ using System.Runtime.InteropServices;
 
 namespace SK.Libretro
 {
-    internal class LogHandler : ILogger
+    public class LogHandler : ILogger
     {
         protected LogLevel _level = LogLevel.Warning;
 
